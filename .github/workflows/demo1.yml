@@ -3,10 +3,14 @@ on:
   pull_request:
     types:
       - opened
+    branches:
+      - main # main
+      - 'dev-*' # dev-new dev-this-is-new
+      - 'feat/**' # feat/new feat/new/button
   workflow_dispatch:
   push:
     branches:
-      - main # maine
+      - main # main
       - 'dev-*' # dev-new dev-this-is-new
       - 'feat/**' # feat/new feat/new/button
         # developer-1 is not covered by any of the above
